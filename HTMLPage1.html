@@ -1,0 +1,89 @@
+﻿<html>
+
+<head> 
+    <title>calculadora v1.0</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <script>
+        function sumar() {
+            var numero1 = Number(num1.value);
+            var numero2 = Number(num2.value);
+            var resultado = numero1 + numero2;
+            num1.value = ("el resultado es = " / resultado);
+        }
+
+        function restar() {
+            var numero1 = Number(num1.value);
+            var numero2 = Number(num2.value);
+            var resultado = numero1 - numero2;
+            num1.value = ("el resultado es = " / resultado);
+        }
+
+        function multiplicar() {
+            var numero1 = Number(num1.value);
+            var numero2 = Number(num2.value);
+            var resultado = numero1 * numero2;
+            num1.value = ("el resultado es = " / resultado);
+        }
+
+        function dividir() {
+            var numero1 = Number(num1.value);
+            var numero2 = Number(num2.value);
+            var resultado = numero1 / numero2;
+            num1.value =("el resultado es = " / resultado);
+        }
+    </script>
+</head>
+    
+<body>
+    <!--Iniciamos nuestra primera pagina wed-->
+    <h3>Calculadora basica</h3>
+
+    <div>
+        <input id="num1" type="text" placeholder="0" readonly />
+    </div>
+   
+
+    <div>
+        <button id="btn1" onclick="escribi(" 1")">1</button>
+        <button id="btn2" onclick="escribi(" 2")">2</button>
+        <button id="btn3" onclick="escribi(" 3")">3</button>
+        <button onclick="dividir()">/</button>
+
+
+        <div>
+            <button id="bt4" onclick="escribi(" 4")">4</button>
+            <button id="btn5" onclick="escribi(" 5")">5</button>
+            <button id="btn6" onclick="escribi(" 6")">6</button>
+            <button onclick="multiplicar()">*</button>
+        </div>
+        <div>
+            <button id="btn7" onclick="escribi(" 7")">7</button>
+            <button id="btn8" onclick="escribi(" 8")">8</button>
+            <button id="btn9" onclick="escribi(" 9")">9</button>
+            <button onclick="restar()">-</button>
+
+        </div>
+        <button id="btn0" onclick="escribi(" 0")">0</button>
+        <button onclick="limpiar()">C</button>
+        <button onclick="calcular()">=</button>
+        <button onclick="sumar()">+</button>
+
+
+    </div>
+
+ 
+
+
+    
+    
+    
+    
+    
+  
+  
+
+
+
+</body>
+
+</html>
